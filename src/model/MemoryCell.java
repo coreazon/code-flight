@@ -36,6 +36,12 @@ public class MemoryCell {
         return id;
     }
 
+    public void swapFirstAndSecond(MemoryCell other) {
+        var valueA = a.getValue();
+        a.setValue(other.getB().getValue());
+        other.getB().setValue(valueA);
+    }
+
     public void copy(MemoryCell other) {
         a.setValue(other.getA().getValue());
         b.setValue(other.getB().getValue());
