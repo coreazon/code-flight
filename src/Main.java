@@ -1,6 +1,8 @@
 import command.CommandParserExecute;
 import core.Input;
 import core.Output;
+import core.Pair;
+import errors.Errors;
 
 import java.util.Scanner;
 
@@ -32,10 +34,17 @@ public final class Main {
      */
     public static void main(String[] args) {
 
-        var session = new Session(OUTPUT, ERROR_OUTPUT, INPUT, new CommandParserExecute());
+        CommandParserExecute cmdParser = new CommandParserExecute();
+
+        //TODO: check args
+
+
+        var session = new Session(OUTPUT, ERROR_OUTPUT, INPUT, cmdParser);
         session.interactive();
 
     }
+
+
 
 
 }

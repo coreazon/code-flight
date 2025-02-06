@@ -8,4 +8,15 @@ package model;
  * @version 1.0
  */
 public class TaskHandler {
+
+    private boolean initMode;
+
+
+    public TaskHandler() {
+        initMode = true;
+    }
+
+
+
+
 }

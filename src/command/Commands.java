@@ -16,6 +16,9 @@ import java.util.List;
  * @version 1.0
  */
 public enum Commands {
+
+    //TODO: add "help" string for each command
+
     /**
      * example command
      */

@@ -16,6 +16,7 @@ public final class Errors {
      * Error-Message which gets thrown when the command should have been implemented but is not
      */
     public static final String COMMAND_NOT_IMPLEMENTED = "command not implemented";
+    public static final String MISSING_ARGS = "minimum required args are not met";
 
 
     private Errors() throws IllegalAccessException {
