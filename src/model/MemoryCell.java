@@ -8,6 +8,5 @@ public class MemoryCell {
     //last memorycell pints to first one again
 
     AICommand command;
-    Argument argumentA;
-    Argument argumentB;
+
 }
