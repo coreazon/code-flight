@@ -19,7 +19,127 @@ public enum Commands {
     /**
      * example command
      */
-    EXAMPLE(CommandParserExecute.EXAMPLE_COMMAND, CommandParserExecute.REGEX_EXAMPLE_COMMAND) {
+    HELP(CommandParserExecute.HELP_COMMAND, CommandParserExecute.REGEX_HELP_COMMAND) {
+        @Override
+        public Result executeCommand(List<String> parameters, TaskHandler taskHandler) {
+            String resultMessage;
+
+
+            try {
+                resultMessage = taskHandler.example(Object);
+
+            } catch (TaskException e) {
+                return new Result(Result.ResultType.FAILURE, e.getMessage());
+            }
+            return new Result(Result.ResultType.SUCCESS, resultMessage);
+        }
+    },
+    ADD_AI(CommandParserExecute.ADD_AI_COMMAND, CommandParserExecute.REGEX_ADD_AI_COMMAND) {
+        @Override
+        public Result executeCommand(List<String> parameters, TaskHandler taskHandler) {
+            String resultMessage;
+
+
+            try {
+                resultMessage = taskHandler.example(Object);
+
+            } catch (TaskException e) {
+                return new Result(Result.ResultType.FAILURE, e.getMessage());
+            }
+            return new Result(Result.ResultType.SUCCESS, resultMessage);
+        }
+    },
+    REMOVE_AI(CommandParserExecute.REMOVE_AI_COMMAND, CommandParserExecute.REGEX_REMOVE_AI_COMMAND) {
+        @Override
+        public Result executeCommand(List<String> parameters, TaskHandler taskHandler) {
+            String resultMessage;
+
+
+            try {
+                resultMessage = taskHandler.example(Object);
+
+            } catch (TaskException e) {
+                return new Result(Result.ResultType.FAILURE, e.getMessage());
+            }
+            return new Result(Result.ResultType.SUCCESS, resultMessage);
+        }
+    },
+    SET_INIT_MODE(CommandParserExecute.SET_INIT_MODE_COMMAND, CommandParserExecute.REGEX_SET_INIT_MODE_COMMAND) {
+        @Override
+        public Result executeCommand(List<String> parameters, TaskHandler taskHandler) {
+            String resultMessage;
+
+
+            try {
+                resultMessage = taskHandler.example(Object);
+
+            } catch (TaskException e) {
+                return new Result(Result.ResultType.FAILURE, e.getMessage());
+            }
+            return new Result(Result.ResultType.SUCCESS, resultMessage);
+        }
+    },
+    START_GAME(CommandParserExecute.START_GAME_COMMAND, CommandParserExecute.REGEX_START_GAME_COMMAND) {
+        @Override
+        public Result executeCommand(List<String> parameters, TaskHandler taskHandler) {
+            String resultMessage;
+
+
+            try {
+                resultMessage = taskHandler.example(Object);
+
+            } catch (TaskException e) {
+                return new Result(Result.ResultType.FAILURE, e.getMessage());
+            }
+            return new Result(Result.ResultType.SUCCESS, resultMessage);
+        }
+    },
+    NEXT(CommandParserExecute.NEXT_COMMAND, CommandParserExecute.REGEX_NEXT_COMMAND) {
+        @Override
+        public Result executeCommand(List<String> parameters, TaskHandler taskHandler) {
+            String resultMessage;
+
+
+            try {
+                resultMessage = taskHandler.example(Object);
+
+            } catch (TaskException e) {
+                return new Result(Result.ResultType.FAILURE, e.getMessage());
+            }
+            return new Result(Result.ResultType.SUCCESS, resultMessage);
+        }
+    },
+    SHOW_MEMORY(CommandParserExecute.SHOW_MEMORY_COMMAND, CommandParserExecute.REGEX_SHOW_MEMORY_COMMAND) {
+        @Override
+        public Result executeCommand(List<String> parameters, TaskHandler taskHandler) {
+            String resultMessage;
+
+
+            try {
+                resultMessage = taskHandler.example(Object);
+
+            } catch (TaskException e) {
+                return new Result(Result.ResultType.FAILURE, e.getMessage());
+            }
+            return new Result(Result.ResultType.SUCCESS, resultMessage);
+        }
+    },
+    SHOW_AI(CommandParserExecute.SHOW_AI_COMMAND, CommandParserExecute.REGEX_SHOW_AI_COMMAND) {
+        @Override
+        public Result executeCommand(List<String> parameters, TaskHandler taskHandler) {
+            String resultMessage;
+
+
+            try {
+                resultMessage = taskHandler.example(Object);
+
+            } catch (TaskException e) {
+                return new Result(Result.ResultType.FAILURE, e.getMessage());
+            }
+            return new Result(Result.ResultType.SUCCESS, resultMessage);
+        }
+    },
+    END_GAME(CommandParserExecute.END_GAME_COMMAND, CommandParserExecute.REGEX_END_GAME_COMMAND) {
         @Override
         public Result executeCommand(List<String> parameters, TaskHandler taskHandler) {
             String resultMessage;

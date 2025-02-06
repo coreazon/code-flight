@@ -48,6 +48,7 @@ public class Session {
     public void interactive() {
         isCodeRunning = true;
         while (isCodeRunning) {
+
             processSingleCommand();
         }
     }
